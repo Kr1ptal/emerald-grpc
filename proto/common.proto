@@ -30,6 +30,12 @@ enum ChainRef {
   CHAIN_GOERLI = 10005;
   CHAIN_ROPSTEN = 10006;
   CHAIN_RINKEBY = 10007;
+  CHAIN_MUMBAI = 10008; // Mumbai Testnet
+  CHAIN_BSCTEST = 10009; // Binance Smart Chain Testnet
+  CHAIN_FUJI = 10010; // Avalanche Fuji C-Chain
+
+  CHAIN_ARBITRUM = 42161;
+  CHAIN_ARBITRUM_GOERLI = 421613;
 
   // Non-standard starts from 20_000
 }
@@ -69,8 +75,8 @@ message Asset {
 }
 
 message Erc20Asset {
-    ChainRef chain = 1;
-    string contract_address = 2;
+  ChainRef chain = 1;
+  string contract_address = 2;
 }
 
 message BlockInfo {
