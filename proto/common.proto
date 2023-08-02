@@ -22,6 +22,8 @@ enum ChainRef {
   // CHAIN_LIGHTNING = 1001;
   CHAIN_MATIC = 1002; // Matic PoS Ethereum sidechain based on Polygon
   CHAIN_RSK = 1003; // RSK sidechain, https://www.rsk.co/
+  CHAIN_ARBITRUM = 1004;
+
   // Testnets start with 10_000
   CHAIN_MORDEN = 10001;
   CHAIN_KOVAN = 10002;
@@ -33,9 +35,8 @@ enum ChainRef {
   CHAIN_MUMBAI = 10008; // Mumbai Testnet
   CHAIN_BSCTEST = 10009; // Binance Smart Chain Testnet
   CHAIN_FUJI = 10010; // Avalanche Fuji C-Chain
+  CHAIN_ARBITRUM_GOERLI = 10011;
 
-  CHAIN_ARBITRUM = 42161;
-  CHAIN_ARBITRUM_GOERLI = 421613;
 
   // Non-standard starts from 20_000
 }
